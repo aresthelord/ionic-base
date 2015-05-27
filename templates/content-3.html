@@ -1,0 +1,76 @@
+<ion-view cache-view="false" view-title="Kral Faruk | İletişim">
+    <ion-pane>
+        <ion-content class="padding">
+		<div class="row transparent" ><div class="col">
+                <div class="list">
+
+  
+
+  <a class="item item-icon-left item-icon-right" ng-href="tel:05053953671">
+    <i class="icon ion-iphone"></i>
+    +90 505 395 36 71
+    <i class="icon ion-ios-telephone-outline"></i>
+  </a>
+
+  <a class="item item-icon-left" ng-href="mailto:kralfarukkirdugunu@gmail.com" target="_blank">
+    <i class="icon ion-email"></i>
+    kralfarukkirdugunu@gmail.com
+  </a>
+  <!--<a class="item item-icon-left" href="geo:38.532243, 28.625049q=Kral+Faruk+Kır+Düğün+Salonu,+Kula,+Türkiye"> -->
+ <a class="item item-icon-left" href="https://www.google.com/maps/place/Kral+Faruk+K%C4%B1r+D%C3%BC%C4%9F%C3%BCn+Salonu/@38.532214,28.624695,17z/data=!3m1!4b1!4m2!3m1!1s0x14b874e06bf86c89:0x55c0a09b2c6c8a4b" target="_blank" >
+  
+    <i class="icon ion-ios-location"></i>
+    Kenan Evren Mah. Oğuzhan Cad. No: 105 Gölet Yolu Üzeri, Jandarma Girişi 600. metre Kula/MANISA
+  </a>
+
+</div> 
+			</div>
+			</div>
+		
+		<form>
+           <div class="row transparent" >
+		   <div class="col">
+            <h3>Bize Yazın</h3>
+			
+			
+			<label class="item item-input">
+				  <i class="icon ion-ios-contact-outline"></i>
+				  <input type="text" placeholder=" İsminiz" ng-model="post.username"/>
+				</label>
+				<label class="item item-input">
+				  <i class="icon ion-email" placeholder=" email"></i>
+				  <input type="email" placeholder=" email" ng-model="post.email"/>
+				</label>
+				<label class="item item-input">
+				  <i class="icon ion-iphone"></i>
+				  <input type="tel" placeholder=" Telefonunuz" ng-model="post.phone"/>
+				</label>
+
+				<label class="item item-input">
+
+				  <i class="icon ion-ios-chatbubble-outline"></i>
+				  <input type="text" placeholder=" Mesajınız" ng-model="post.body"/>
+				</label>
+			
+			</div>
+			</div>
+			<div class="row" >
+			<div class="col">
+			<div class="button-bar">
+        <button class="button button-royal" ng-click="clearPost()">
+          <i class="icon ion-close-circled"></i>
+        
+        </button>
+        <button class="button button-royal" ng-click="sendPost(post)">
+          <i class="icon ion-share"></i>
+         
+        </button>
+		
+      </div>
+	  </div>
+	  </div>
+	  </form>
+        </ion-content>  
+    </ion-pane>
+</ion-view>
+

@@ -24,3 +24,5 @@ Components used :
 Frontend : ionic framework ,cordova
 Backend : Slim api, mysql db, current slim endpoints are designed for php 5.3.8 and db connection is established using utf8 encoding..
 
+you can see the projet production site..
+www.kralfarukkirdugunu.com

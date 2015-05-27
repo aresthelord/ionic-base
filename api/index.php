@@ -468,16 +468,16 @@ function getConnection()
     $dbh = null;
     if ($istest) {
         $dbhost = "localhost";
-        $dbuser = "db2admin";
-        $dbpass = "Ankara12";
+        $dbuser = "localdbadmin";
+        $dbpass = "localdbpassword";
         $dbname = "kralfaruk";
         $dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass, array(PDO::MYSQL_ATTR_FOUND_ROWS => true));
         $dbh->exec("set names utf8");
         $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } else {
-        $dbhost = "94.73.149.189";
-        $dbuser = "db2admin";
-        $dbpass = "Ankara12";
+        $dbhost = "remotedbhost";
+        $dbuser = "remotedbadmin";
+        $dbpass = "remotedbpassword";
         $dbname = "kralfaruk";
         $dbh = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
         $dbh->exec("set names utf8");

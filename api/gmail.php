@@ -40,7 +40,7 @@ $mail->SMTPAuth = true;
 $mail->Username = "denizdemirci156@gmail.com";
 
 //Password to use for SMTP authentication
-$mail->Password = "vxjeipehqaptexmp";
+$mail->Password = "googleapicode";
 
 //Set who the message is to be sent from
 $mail->setFrom('denizdemirci156@gmail', 'Deniz Demirci');
